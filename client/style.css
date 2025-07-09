@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#backend-message {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #212121;
+    border-radius: 5px;
+}
