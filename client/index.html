@@ -11,6 +11,57 @@
     <p id="backend-message">Loading message from backend...</p>
     <button id="fetchButton">Fetch Message from Backend</button>
 
+    <hr style="margin: 40px 0; width: 80%;">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" id="regUsername" placeholder="Username" required><br>
+        <input type="email" id="regEmail" placeholder="Email" required><br>
+        <input type="password" id="regPassword" placeholder="Password" required><br>
+        <button type="submit">Register</button>
+    </form>
+    <p id="registration-status" style="margin-top: 10px;"></p>
+
+<hr style="margin: 40px 0; width: 80%;">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <p id="login-status" style="margin-top: 10px;"></p>
+
+    <hr style="margin: 40px 0; width: 80%;">
+    <h2>Protected Content</h2>
+    <button id="fetchProtectedButton">Fetch Protected Data</button>
+    <p id="protected-status" style="margin-top: 10px;"></p>
+
+<hr style="margin: 40px 0; width: 80%;"> <h2>My Profile</h2> <form id="profileForm">
+        <label for="profileUsername">Username:</label>
+        <input type="text" id="profileUsername" disabled><br> <label for="profileEmail">Email:</label>
+        <input type="email" id="profileEmail" disabled><br> <label for="profileBio">Bio:</label>
+        <textarea id="profileBio" placeholder="Tell us about yourself..." rows="4"></textarea><br>
+
+        <label for="profileLocation">Location:</label>
+        <input type="text" id="profileLocation" placeholder="e.g., New York, NY"><br>
+
+        <label for="profileGender">Gender:</label>
+        <select id="profileGender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select><br>
+
+        <label for="profileAge">Age:</label>
+        <input type="number" id="profileAge" min="13" max="120" placeholder="e.g., 25"><br>
+
+        <label for="profileInterests">Interests (comma-separated):</label>
+        <input type="text" id="profileInterests" placeholder="e.g., reading, hiking, cooking"><br>
+
+        <button type="submit">Update Profile</button>
+        <button type="button" id="fetchProfileButton">Refresh Profile</button> </form>
+    <p id="profile-status" style="margin-top: 10px;"></p>
     <script src="script.js"></script>
 </body>
 </html>
